@@ -1,0 +1,36 @@
+{
+    "name": "Better Code PTIT",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description" : "Extension dành cho Code PTIT",
+    "icons": {
+        "16": "img/logo.png",
+        "48": "img/logo.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "img/logo.png",
+            "38": "img/logo.png"
+        },
+        "default_title": "Better Code PTIT",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://code.ptit.edu.vn/*"
+            ],
+            "js": [
+                "scripts/content.js"
+            ],
+            "css": [
+                "css/main.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": [
+        "clipboardWrite",
+        "storage"
+    ]
+}
