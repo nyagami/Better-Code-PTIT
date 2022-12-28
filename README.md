@@ -31,6 +31,9 @@
 
 7. **Trải nghiệm vui vẻ ^^**
 
+```
+    video hướng dẫn: https://www.youtube.com/watch?v=5y_w934xFSI
+```
 
 # Update
 
